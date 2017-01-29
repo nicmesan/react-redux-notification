@@ -8,7 +8,7 @@ import Notification from './single_notification';
 class Notifications extends Component {
 
 	renderNotifications () {
-		return this.props.notifications.map((notification, index) => {
+		return this.props.notifications.map((notification) => {
 
 			return (
 				<Notification
@@ -25,18 +25,8 @@ class Notifications extends Component {
 	}
 
 	render () {
-		
-		const notificationContainerStyle = {
-			position: 'fixed',
-			bottom: 0,
-			marginLeft: 'auto',
-			marginRight: 'auto',
-			left: 0,
-			right: 0,
-		};
-		
 		return (
-			<div style={notificationContainerStyle}>
+			<div className="notification-container">
 				{this.renderNotifications()}
 			</div>
 		);

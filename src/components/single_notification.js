@@ -32,31 +32,9 @@ export default class Notification extends Component {
 	}
 
 	render () {
-
-		const notificationStyles = {
-			color: 'white',
-			fontWeight: 600,
-			padding: '16px 0 16px 0',
-			position: 'relative',
-			margin: '.3rem auto 0 auto',
-			textAlign: 'center',
-			width: '80%',
-			borderRadius: '0.5rem',
-			overflow: 'hidden',
-			animation: 'fadeOut 5s 1',
-			animationFillMode: 'forwards',
-			cursor: 'pointer',
-			backgroundColor: 'rgba(152, 5, 19, 0.8)',
-		};
-		
-		const closeButtonStyle = {
-			position: 'absolute',
-			right: 2,
-			top: 2,
-		};
 		return (
-			<div className="notification" style={notificationStyles}>
-				<div className="notificationCloseButton" style={closeButtonStyle} onClick={this.clearNotification}>
+			<div className={`notification ${this.props.className}`}>
+				<div className="notification-close-button" onClick={this.clearNotification}>
 					<i className="material-icons">close</i>
 				</div>
 				{this.props.message}
