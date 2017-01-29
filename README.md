@@ -9,6 +9,18 @@ npm install --save react-redux-notifications
 
 # Getting started
 
+### CSS
+
+#### Webpack:
+```js
+import 'react-redux-notifications/src/styles/notifications.css';
+```
+
+#### Other
+```html
+<link rel="stylesheet" type="text/css" href="path/to/notifications.css">
+```
+
 ### Middleware
 
 ```js
@@ -128,7 +140,7 @@ exports function doSomeStuff () {
 | type | string | None | false |
 
 - message: Text message to be rendered.
-- className: Class name to be applied to this specific notification.
+- className: Class name to be applied to this specific notification. The library comes with an error class to render error like notifications. 
 - unique: If true, it will check if a notification of the same "type" exists and if it does, will replace it instead of stacking it.
 - type: Related to the unique props, group related notifications of the same type if you don't want them to stack.
 
