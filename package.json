@@ -2,7 +2,7 @@
   "name": "react-redux-notifications",
   "version": "0.0.1",
   "description": "The simplest way to implement a notiffication system in your React-Redux app",
-  "main": "src/index.js",
+  "main": "./index.js",
   "scripts": {
     "start": "cd demo && webpack-dev-server --config webpack.config.js --progress --colors --port 9000",
     "test": "npm test"

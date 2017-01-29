@@ -18,7 +18,7 @@ class Notifications extends Component {
 					style={notification.style}
 					clearNotification={this.props.clearSingleNotification}
 					notificationId={notification.id}
-					duration={this.props.duration}
+					duration={notification.duration || this.props.duration}
 				/>
 			); 
 		});

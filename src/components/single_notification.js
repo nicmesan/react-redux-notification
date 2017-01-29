@@ -15,7 +15,7 @@ export default class Notification extends Component {
 			setTimeout(() => {
 
 		   this.props.clearNotification(this.props.notificationId);
-		}, 3000);
+		}, this.props.duration);
 
 		
 	}
@@ -68,6 +68,8 @@ export default class Notification extends Component {
 Notification.protoTypes = {
 	message: React.PropTypes.string.isRequired,
 	type: React.PropTypes.string,
+	unique: React.PropTypes.bool,
+	className: React.PropTypes.string,
 	notificationId: React.PropTypes.string,
 	clearNotifications: React.PropTypes.func,
 	duration: React.PropTypes.number

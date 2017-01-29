@@ -1,8 +1,8 @@
 import React, { Component } from 'react';
-import { Notifications } from '../src';
+import { Notifications } from '../index';
 import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
-import { actions } from '../src'
+import { addNotification } from '../actions'
 
 class DemoMain extends Component {
     constructor(){
@@ -11,7 +11,7 @@ class DemoMain extends Component {
         this.dispatchNotification = this.dispatchNotification.bind(this)
     }
 
-    dispatchNotification (position) {
+    dispatchNotification () {
         const notificationPayload = {
             text: 'A notification Message',
         };
@@ -33,7 +33,6 @@ class DemoMain extends Component {
 }
 
 function mapDispatchToProps (dispatch) {
-    const addNotification = actions.addNotification;
     return bindActionCreators({ addNotification }, dispatch);
 }
 

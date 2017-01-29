@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom';
 import DemoMain from './demo_main';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import {notificationsMiddleware, notificationsReducer} from '../src'
+import {notificationsMiddleware} from '../index'
 import rootReducer from './demo_reducer';
 
 const store = createStore(
