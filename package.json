@@ -1,5 +1,5 @@
 {
-  "name": "react-redux-notifications",
+  "name": "react-redux-notification",
   "version": "0.0.1",
   "description": "The simplest way to implement a notiffication system in your React-Redux app",
   "main": "./index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/nicmesan/react-redux-notifications.git"
+    "url": "git+https://github.com/nicmesan/react-redux-notification.git"
   },
   "keywords": [
     "react",
@@ -28,9 +28,9 @@
   "author": "nicmesan <nicoms91@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/nicmesan/react-redux-notifications/issues"
+    "url": "https://github.com/nicmesan/react-redux-notification/issues"
   },
-  "homepage": "https://github.com/nicmesan/react-redux-notifications#readme",
+  "homepage": "https://github.com/nicmesan/react-redux-notification#readme",
   "peerDependencies": {
     "react": "0.14.x || ^15.0.0",
     "react-dom": "0.14.x || ^15.0.0"

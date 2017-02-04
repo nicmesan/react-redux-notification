@@ -1,10 +1,10 @@
-# react-redux-notifications
+# react-redux-notification
 The simplest way to implement a notification system in your React-Redux app
 
 ## Installation
 
 ```
-npm install --save react-redux-notifications
+npm install --save react-redux-notification
 ```
 
 # Getting started
@@ -13,7 +13,7 @@ npm install --save react-redux-notifications
 
 #### Webpack:
 ```js
-import 'react-redux-notifications/src/styles/notifications.css';
+import 'react-redux-notification/src/styles/notifications.css';
 ```
 
 #### Other
@@ -29,7 +29,7 @@ import ReactDOM from 'react-dom';
 import App from './my_app';
 import { createStore, applyMiddleware } from 'redux';
 import { Provider } from 'react-redux';
-import {notificationsMiddleware} from 'react-redux-notifications'
+import {notificationsMiddleware} from 'react-redux-notification'
 import rootReducer from './my_reducer';
 
 const store = createStore(
