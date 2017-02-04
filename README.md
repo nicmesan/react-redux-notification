@@ -64,7 +64,7 @@ First, add the notifications container in your main component:
 
 ```js
 import React, { Component } from 'react';
-import { Notifications } from 'reat-redux-notifications'
+import { Notifications } from 'react-redux-notification'
 
 class MainComponent extends Component {
   render () {
@@ -93,8 +93,8 @@ You can add a notification calling the addNotification action:
 
 ```js
 import React, { Component } from 'react';
-import { Notifications } from 'reat-redux-notifications';
-import { addNotification } from 'reat-redux-notifications/actions';
+import { Notifications } from 'react-redux-notification';
+import { addNotification } from 'react-redux-notification/actions';
 
 class MainComponent extends Component {
   
@@ -151,8 +151,8 @@ Call clearAllNotifications action to clear all current notifications:
 
 ```js
 import React, { Component } from 'react';
-import { Notifications } from 'reat-redux-notifications';
-import { clearAllNotifications } from 'reat-redux-notifications/actions';
+import { Notifications } from 'react-redux-notification';
+import { clearAllNotifications } from 'react-redux-notification/actions';
 
 class MainComponent extends Component {
   
